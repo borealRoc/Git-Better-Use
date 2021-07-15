@@ -35,3 +35,9 @@ s  ... ...
 3. `git stash apply <num>`: 恢复第 num 个暂存，不会把 stash 记录从 stash list 中删除
 4. `git stash pop`: 恢复最近一次的 stash, 并把这条 stash 记录从 stash list 中删除
 5. `git stash clear`: 删除 stash list 里所有的 stash 记录
+
+# 五、撤销修改
+1. `git checkout <filename>`: 撤销某个文件的修改
+2. `git checkout <file>`: 撤销整个文件夹的修改
+3. `git reset <filename> || <file>`: 撤销暂存区(已经 git add)的修改
+
