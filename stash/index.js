@@ -9,3 +9,7 @@ console.log(`
 现在我又临时有事再切换到 cherry-pick-1 分支,
 再 stash 一次这条信息
 `)
+
+console.log('no finish...')
+
+console.log('现在有个bug先去解决，等下接着做')
