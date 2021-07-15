@@ -41,3 +41,18 @@ s  ... ...
 2. `git checkout <file>`: 撤销整个文件夹的修改
 3. `git reset <filename> || <file>`: 撤销暂存区(已经 git add)的修改
 
+# 六、使用 git alias 对 git 指令进行别名配置
+1. `git config --global alias.<简化的字符> <原始命令>`
+1. `vim ~/.gitconfig`: 查看全局的 git 配置
+```
+git config --global alias.ad add
+
+// 我的配置
+ad = add
+ci = commit
+pl = pull
+co = checkout
+me = merge
+br = branch
+st = status
+```
