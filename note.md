@@ -28,3 +28,10 @@ s  ... ...
 1. git reset: `git reset <commit-id>`: 将提交记录回退到指定的 commit-id 上
 2. git revert: `git revert <commit-id>`: 新建一条 commit, 撤回之前 commit-id 的修改
 > 对于个人的 feature 分支而言，可以使用 git reset 来回退历史记录，之后使用 git push --force 进行推送到远程，但是如果是在多人协作的集成分支上，不推荐直接使用 git reset 命令，而是使用更加安全的 git revert 命令进行撤回提交。这样，提交的历史记录不会被抹去，可以安全的进行撤回。
+
+# 四、git stash 暂存文件
+1. `git stash save <message>`: 在暂存文件的时候，添加暂存备注
+2. `git stash list`: 查看所有 stash
+3. `git stash apply <num>`: 恢复第 num 个暂存，不会把 stash 记录从 stash list 中删除
+4. `git stash pop`: 恢复最近一次的 stash, 并把这条 stash 记录从 stash list 中删除
+5. `git stash clear`: 删除 stash list 里所有的 stash 记录
