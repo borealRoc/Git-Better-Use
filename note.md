@@ -20,7 +20,7 @@ s  ... ...
 11. `git push -f origin`：强制推送到远程
 
 # 二、合并指定 commit
-1. 定义：不合并一个分支所有的 commit, 只合并相要的 commit
+1. 定义：不合并一个分支所有的 commit, 只合并想要的 commit
 2. 方法: `git cherry-pic <commit-id>`
 
 
