@@ -29,7 +29,10 @@ s  ... ...
 
 
 ## 三、git reset Vs git revert
-1. git reset: `git reset <commit-id>`: 将提交记录回退到指定的 commit-id 上
+1. git reset: `git reset <commit-id>`
+   - 将提交记录回退到指定的 commit-id 上
+   - 然后 `git checkout` 撤销修改
+   - 最后 `git push -f origin`：强制推送到远程
 2. git revert: `git revert <commit-id>`: 新建一条 commit, 撤回之前 commit-id 的修改
 > 对于个人的 feature 分支而言，可以使用 git reset 来回退历史记录，之后使用 git push --force 进行推送到远程，但是如果是在多人协作的集成分支上，不推荐直接使用 git reset 命令，而是使用更加安全的 git revert 命令进行撤回提交。这样，提交的历史记录不会被抹去，可以安全的进行撤回。
 
