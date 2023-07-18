@@ -13,5 +13,3 @@ console.log(`
 console.log('no finish...')
 
 console.log('现在有个bug先去解决，等下接着做')
-
-console.log('怎么又有bug了')
