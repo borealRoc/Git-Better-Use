@@ -1,4 +1,5 @@
 # Git-Better-Use
+
 ## 一、合并 commit 记录
 1. `git rebase -i [startpoint]  [endpoint]` : 合并 startpoint 到  endpoint 之间的 commit log
    - i 的意思是 --interactive, 即弹出交互式的界面让用户编辑完成合并操作
