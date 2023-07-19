@@ -56,7 +56,7 @@ git config --global alias.ad add
 
 // 我的配置
 ad = add
-ci = commit
+co = commit
 pl = pull
 co = checkout
 me = merge
